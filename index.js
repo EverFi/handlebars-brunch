@@ -38,7 +38,7 @@ class HandlebarsCompiler {
 
     if (this.optimize) {
       data = data.replace(/^[\x20\t]+/mg, '').replace(/[\x20\t]+$/mg, '');
-      data = data.replace(/^[\r\n]+/, '').replace(/[\r\n]*$/, '\n');
+      data = data.replace(/^[\r\n]+/, '').replace(/[\r\n]*$/, '');
     }
 
     try {
