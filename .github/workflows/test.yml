@@ -1,0 +1,10 @@
+name: handlebars-brunch test
+run-name: test
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: yarn install
+      - run: yarn test
