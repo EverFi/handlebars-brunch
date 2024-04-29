@@ -1,0 +1,15 @@
+name: Checkmarx and Mend scans updates
+on:
+  push:
+    branches:
+      - develop
+      - "release/**"
+      - "hotfix/**"
+      - test-security
+
+jobs:
+  call-security-checks:
+    uses: EverFi/frontend-actions/.github/workflows/_security.yml@master
+    with:
+      product: "furnace"
+    secrets: inherit
