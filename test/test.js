@@ -1,17 +1,18 @@
-/* eslint no-undef: 0 */
-'use strict';
-
-const sysPath = require('path');
-const Handlebars = require('handlebars');
-const expect = require('chai').expect;
-const Plugin = require('../index');
-const config = require('./fixtures/brunch.conf');
+import sysPath from 'path';
+import Handlebars from 'handlebars';
+import { expect } from 'chai';
+import Plugin from '../index.js';
+import * as config from './fixtures/brunch.conf.js';
 
 global.Handlebars = Handlebars;
-require('../ns');
+//require('../ns');
 
 describe('Plugin', () => {
   let plugin;
+
+  before(() => {
+    return import('../ns.js');
+  });
 
   beforeEach(() => {
     plugin = new Plugin({

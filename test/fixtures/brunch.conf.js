@@ -1,4 +1,4 @@
-exports.runtimeTrue = {
+export const runtimeTrue = {
   plugins: {
     handlebars: {
       include: {
@@ -8,7 +8,7 @@ exports.runtimeTrue = {
   }
 };
 
-exports.runtimeFalse = {
+export const runtimeFalse = {
   plugins: {
     handlebars: {
       include: {
@@ -18,7 +18,7 @@ exports.runtimeFalse = {
   }
 };
 
-exports.runtimeFalseOptimizedTrue = {
+export const runtimeFalseOptimizedTrue = {
   plugins: {
     handlebars: {
       include: {
@@ -29,7 +29,7 @@ exports.runtimeFalseOptimizedTrue = {
   optimize: true
 };
 
-exports.runtimeTrueAmdTrue = {
+export const runtimeTrueAmdTrue = {
   plugins: {
     handlebars: {
       include: {
@@ -40,7 +40,7 @@ exports.runtimeTrueAmdTrue = {
   }
 };
 
-exports.runtimeTrueOptimizeTrue = {
+export const runtimeTrueOptimizeTrue = {
   plugins: {
     handlebars: {
       include: {
@@ -51,7 +51,7 @@ exports.runtimeTrueOptimizeTrue = {
   optimize: true
 };
 
-exports.runtimeTrueAmdTrueOptimizeTrue = {
+export const runtimeTrueAmdTrueOptimizeTrue = {
   plugins: {
     handlebars: {
       include: {
@@ -63,18 +63,7 @@ exports.runtimeTrueAmdTrueOptimizeTrue = {
   optimize: true
 };
 
-exports.runtimeTrueAmdTrue = {
-  plugins: {
-    handlebars: {
-      include: {
-        runtime: true,
-        amd: true
-      }
-    }
-  }
-};
-
-exports.amdTrue = {
+export const amdTrue = {
   plugins: {
     handlebars: {
       include: {
@@ -85,7 +74,7 @@ exports.amdTrue = {
   }
 };
 
-exports.amdTrueOptimizeTrue = {
+export const amdTrueOptimizeTrue = {
   plugins: {
     handlebars: {
       include: {
@@ -97,7 +86,7 @@ exports.amdTrueOptimizeTrue = {
   optimize: true
 };
 
-exports.amdFalse = {
+export const amdFalse = {
   plugins: {
     handlebars: {
       include: {
@@ -108,7 +97,7 @@ exports.amdFalse = {
   }
 };
 
-exports.globalNamespaceString = {
+export const globalNamespaceString = {
   plugins: {
     handlebars: {
       namespace: 'JST.Sub'
@@ -116,7 +105,7 @@ exports.globalNamespaceString = {
   }
 };
 
-exports.globalNamespaceFunction = {
+export const globalNamespaceFunction = {
   plugins: {
     handlebars: {
       namespace: filePath => 'test_templates'
@@ -124,7 +113,7 @@ exports.globalNamespaceFunction = {
   }
 };
 
-exports.compileStaticWitData = {
+export const compileStaticWitData = {
   plugins: {
     handlebars: {
       locals: {
