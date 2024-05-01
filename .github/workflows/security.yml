@@ -60,5 +60,5 @@ jobs:
         shell: bash
         run: |
           echo $'\n'projectName=${{ github.event.repository.name }} >>scripts/whitesource/agent.config
-          echo $'\n'productName=handlebars-brunch >>scripts/whitesource/agent.config
+          echo $'\n'productName=furnace >>scripts/whitesource/agent.config
           bash ./scripts/whitesource/scan.sh
