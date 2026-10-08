@@ -14,7 +14,7 @@
     "test": "eslint index.js && mocha test/test.js"
   },
   "dependencies": {
-    "handlebars": ">=4.7.10",
+    "handlebars": "^4.7.10",
     "umd-wrapper": "~0.1.0"
   },
   "devDependencies": {
